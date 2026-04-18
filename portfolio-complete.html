@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdullah Khan - Portfolio</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+        
+        /* Navigation */
+        nav { background: #2563eb; padding: 15px 0; position: sticky; top: 0; z-index: 100; }
+        nav .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-size: 1.5rem; font-weight: bold; }
+        nav ul { list-style: none; display: flex; gap: 30px; }
+        nav a { color: white; text-decoration: none; font-weight: 500; transition: 0.3s; }
+        nav a:hover { opacity: 0.8; }
+        
+        /* Container */
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+        section { padding: 60px 0; }
+        
+        /* Hero */
+        .hero { background: linear-gradient(135deg, #2563eb, #1e40af); color: white; text-align: center; padding: 100px 0; }
+        .hero h1 { font-size: 3rem; margin-bottom: 20px; }
+        .hero p { font-size: 1.1rem; margin-bottom: 30px; max-width: 600px; margin-left: auto; margin-right: auto; }
+        .buttons { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
+        .btn { padding: 12px 30px; border-radius: 5px; text-decoration: none; font-weight: bold; cursor: pointer; border: none; transition: 0.3s; }
+        .btn-white { background: white; color: #2563eb; }
+        .btn-white:hover { opacity: 0.9; transform: scale(1.05); }
+        
+        /* About */
+        .about { background: #f5f5f5; }
+        .about h2, .services h2, .projects h2, .contact h2 { font-size: 2.5rem; text-align: center; margin-bottom: 40px; }
+        .about p { max-width: 800px; margin: 0 auto 15px; }
+        .skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; margin-top: 30px; }
+        .skill { background: #dbeafe; color: #2563eb; padding: 12px; text-align: center; border-radius: 5px; font-weight: bold; }
+        
+        /* Services */
+        .services { background: white; }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-top: 40px; }
+        .service-card { background: #f5f5f5; padding: 25px; border-radius: 8px; border-left: 4px solid #2563eb; transition: 0.3s; }
+        .service-card:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .service-card h3 { margin-bottom: 15px; color: #2563eb; }
+        .service-card p { color: #666; }
+        
+        /* Projects */
+        .projects { background: #f5f5f5; }
+        .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-top: 40px; }
+        .project-card { background: white; padding: 25px; border-radius: 8px; border: 1px solid #ddd; transition: 0.3s; }
+        .project-card:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .project-card h3 { color: #2563eb; margin-bottom: 12px; }
+        .project-card p { color: #666; margin-bottom: 15px; }
+        .tags { display: flex; gap: 10px; flex-wrap: wrap; }
+        .tag { background: #dbeafe; color: #2563eb; padding: 5px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: bold; }
+        
+        /* Contact */
+        .contact { background: linear-gradient(135deg, #2563eb, #1e40af); color: white; }
+        .contact h2 { color: white; }
+        .contact-content { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 40px; }
+        .contact-info h3 { color: white; margin-bottom: 20px; }
+        .contact-info p { margin-bottom: 15px; }
+        .contact-info a { color: #dbeafe; text-decoration: underline; }
+        .contact-form { display: flex; flex-direction: column; gap: 15px; }
+        .form-group label { color: white; font-weight: bold; margin-bottom: 5px; display: block; }
+        .form-group input, .form-group textarea { padding: 10px; border: 1px solid rgba(255,255,255,0.3); background: rgba(255,255,255,0.1); color: white; border-radius: 5px; font-family: Arial; }
+        .form-group input::placeholder, .form-group textarea::placeholder { color: rgba(255,255,255,0.7); }
+        
+        /* Footer */
+        footer { background: #1f2937; color: white; text-align: center; padding: 20px 0; }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav ul { gap: 15px; }
+            .hero h1 { font-size: 2rem; }
+            .buttons { flex-direction: column; }
+            .btn { width: 100%; }
+            .contact-content { grid-template-columns: 1fr; }
+            .skills { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo">Abdullah</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Transform Your Online Presence</h1>
+            <p>I'm Abdullah, a Full-Stack Digital Growth Specialist focused on building and scaling online presence through web development, SEO, and content strategy.</p>
+            <div class="buttons">
+                <a href="#contact" class="btn btn-white">Get Started</a>
+                <a href="#projects" class="btn btn-white">View Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I combine SEO, web development, and content strategy to create websites that don't just look good, but perform.</p>
+            <p>From developing sites using WordPress, Laravel, and Drupal to optimizing them with technical SEO and user-focused design, I turn ideas into results-driven digital experiences.</p>
+            <p><strong>My approach is simple: build, optimize, and grow.</strong> Whether it's improving rankings, increasing traffic, or boosting conversions, I focus on strategies that deliver measurable impact.</p>
+            
+            <h3 style="text-align: center; margin-top: 40px; margin-bottom: 20px;">Skills</h3>
+            <div class="skills">
+                <div class="skill">WordPress Development</div>
+                <div class="skill">WooCommerce</div>
+                <div class="skill">SEO & Analytics</div>
+                <div class="skill">Content Strategy</div>
+                <div class="skill">Full-Stack Development</div>
+                <div class="skill">Performance Optimization</div>
+                <div class="skill">Laravel</div>
+                <div class="skill">Drupal</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2>Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>🌐 Web Development</h3>
+                    <p>Custom WordPress, WooCommerce, and full-stack development solutions tailored to your business needs.</p>
+                </div>
+                <div class="service-card">
+                    <h3>📊 SEO & Digital Growth</h3>
+                    <p>Technical SEO, content optimization, and analytics strategies to boost your rankings and traffic.</p>
+                </div>
+                <div class="service-card">
+                    <h3>✍️ Content Strategy</h3>
+                    <p>Compelling, SEO-optimized content that engages your audience and converts visitors into customers.</p>
+                </div>
+                <div class="service-card">
+                    <h3>🚀 Performance Optimization</h3>
+                    <p>Speed optimization, site audits, and technical improvements for better user experience and rankings.</p>
+                </div>
+                <div class="service-card">
+                    <h3>📱 Social Media Management</h3>
+                    <p>Strategic social media growth and engagement to amplify your brand presence online.</p>
+                </div>
+                <div class="service-card">
+                    <h3>📋 Data Entry & Admin</h3>
+                    <p>Efficient data management, organization, and administrative support for your business operations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>E-Learning Marketplace</h3>
+                    <p>Full online learning platform built with WordPress LMS integration, course management, and student analytics.</p>
+                    <div class="tags">
+                        <span class="tag">WordPress</span>
+                        <span class="tag">LMS</span>
+                        <span class="tag">E-Learning</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Education Platform Dev</h3>
+                    <p>Custom education platform with advanced course features, student progress tracking, and certification system.</p>
+                    <div class="tags">
+                        <span class="tag">Full-Stack</span>
+                        <span class="tag">Laravel</span>
+                        <span class="tag">Education</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>WordPress LMS Site</h3>
+                    <p>Scalable learning management system with membership integration, course drip-feeding, and student engagement tools.</p>
+                    <div class="tags">
+                        <span class="tag">WordPress</span>
+                        <span class="tag">WooCommerce</span>
+                        <span class="tag">LMS</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>SEO & Analytics Project</h3>
+                    <p>Comprehensive SEO audit and optimization strategy resulting in 150% increase in organic traffic within 6 months.</p>
+                    <div class="tags">
+                        <span class="tag">SEO</span>
+                        <span class="tag">Analytics</span>
+                        <span class="tag">Growth</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Let's Work Together</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p><strong>Email:</strong> <a href="mailto:abdullahkhanusafxai@gmail.com">abdullahkhanusafxai@gmail.com</a></p>
+                    <p><strong>Location:</strong> Rawalpindi, Punjab, Pakistan</p>
+                    <p style="margin-top: 20px;"><strong>Follow Me:</strong></p>
+                    <p>
+                        <a href="https://www.linkedin.com/in/itsabdullahx" target="_blank">LinkedIn</a> | 
+                        <a href="https://www.behance.net/abdullahcv" target="_blank">Behance</a> | 
+                        <a href="https://about.me/abdullahkhanyousafzai" target="_blank">Portfolio</a>
+                    </p>
+                </div>
+                <form class="contact-form" onsubmit="handleSubmit(event)">
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Subject</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-white">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Abdullah Khan. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            alert('Thank you for your message! I will get back to you soon.');
+            event.target.reset();
+        }
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#') {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
