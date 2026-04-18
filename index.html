@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdullah Khan | Freelance SEO & WordPress Specialist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav">
+    <a href="index.html" class="logo">Abdullah Khan</a>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="about.html#contact">Contact</a>
+    </nav>
+    <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+  </header>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="about.html#contact">Contact</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <span class="hero-tag">Based in Pakistan 🇵🇰</span>
+      <h1>Abdullah Khan</h1>
+      <p class="hero-sub">Freelance SEO &amp; WordPress Specialist</p>
+      <p class="hero-desc">Helping individuals and businesses grow online through SEO, WordPress development, and content creation — combining technical skills with creative strategies to build impactful digital experiences.</p>
+      <div class="hero-buttons">
+        <a href="services.html" class="btn-primary">View Services</a>
+        <a href="about.html#contact" class="btn-outline">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-graphic">
+      <div class="circle c1"></div>
+      <div class="circle c2"></div>
+      <div class="circle c3"></div>
+      <div class="icon-grid">
+        <div class="icon-card">⚡ SEO</div>
+        <div class="icon-card">🌐 WordPress</div>
+        <div class="icon-card">✍️ Content</div>
+        <div class="icon-card">📊 Data Entry</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HIGHLIGHTS -->
+  <section class="highlights">
+    <div class="highlight-item">
+      <span class="hi-num">5+</span>
+      <span class="hi-label">Service Categories</span>
+    </div>
+    <div class="highlight-item">
+      <span class="hi-num">100%</span>
+      <span class="hi-label">Results Focused</span>
+    </div>
+    <div class="highlight-item">
+      <span class="hi-num">∞</span>
+      <span class="hi-label">Creative Solutions</span>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="intro-section">
+    <div class="intro-text">
+      <h2>Digital Growth, <em>Simplified</em></h2>
+      <p>Abdullah is a passionate digital specialist dedicated to helping individuals and businesses grow online. From website development to search optimization and content creation, every project is approached with attention to detail, dedication, and a results-driven mindset.</p>
+      <a href="about.html" class="btn-primary">Learn More →</a>
+    </div>
+    <div class="intro-cards">
+      <div class="icard">
+        <div class="icard-icon">🔍</div>
+        <h3>SEO Optimization</h3>
+        <p>On-page, technical, and keyword research to push your site to the top.</p>
+      </div>
+      <div class="icard">
+        <div class="icard-icon">🛠️</div>
+        <h3>WordPress Development</h3>
+        <p>Custom setups, speed optimization, and full site maintenance.</p>
+      </div>
+      <div class="icard">
+        <div class="icard-icon">📝</div>
+        <h3>Content Writing</h3>
+        <p>SEO blogs, website copy, and product descriptions that convert.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Abdullah Khan | All Rights Reserved</p>
+    <p>Independently Crafted by Abdullah Khan</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('mobileMenu').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>

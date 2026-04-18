@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Abdullah Khan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="nav">
+    <a href="index.html" class="logo">Abdullah Khan</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html" class="active">About</a>
+      <a href="about.html#contact">Contact</a>
+    </nav>
+    <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+  </header>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="about.html#contact">Contact</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <h1>About Me</h1>
+    <p>The story behind the work.</p>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about-section">
+    <div class="about-image">
+      <img src="https://static.wixstatic.com/media/9ddff0_8e70976e7f814c31b1232eb3b42ce159~mv2.png/v1/crop/x_0,y_27,w_1024,h_1481/fill/w_224,h_324,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/file_00000000b2987208a41738851b74f6ba.png" alt="Abdullah Khan" />
+      <div class="about-name-tag">Abdullah Khan</div>
+    </div>
+    <div class="about-text">
+      <p>I'm Abdullah Khan, a passionate freelance SEO and WordPress specialist, dedicated to helping businesses grow their online presence. I focus on building optimized websites, improving search engine rankings, and creating content that delivers real results. My goal is simple — to turn ideas into effective digital solutions that make an impact.</p>
+
+      <p>This is where I share my journey, skills, and the work I've done. From website development to search engine optimization and content creation, I enjoy working on projects that challenge me and help businesses succeed in the digital world. I believe in continuous learning and staying up to date with the latest trends to provide the best possible solutions.</p>
+
+      <p>What makes my work different is my focus on both creativity and strategy. I don't just build websites or write content — I aim to create experiences that connect with audiences and drive growth. Every project I take on is approached with attention to detail, dedication, and a results-driven mindset.</p>
+
+      <p>If you're looking for someone who can help you build a strong online presence, improve your visibility, and grow your brand, you're in the right place. Feel free to explore my work and get in touch. Let's create something impactful together.</p>
+
+      <div class="skills-tags">
+        <span>SEO</span><span>WordPress</span><span>Content Writing</span><span>Data Entry</span><span>Digital Marketing</span><span>Virtual Assistance</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section" id="contact">
+    <div class="contact-inner">
+      <h2>Connect With Me</h2>
+      <p class="contact-sub">Have a project in mind? Let's talk about how I can help.</p>
+
+      <div class="contact-email">
+        <span>📧</span>
+        <a href="mailto:abdullahkhanusafxai@gmail.com">abdullahkhanusafxai@gmail.com</a>
+      </div>
+
+      <form class="contact-form" onsubmit="handleSubmit(event)">
+        <div class="form-group">
+          <label>Email *</label>
+          <input type="email" placeholder="Your email address" required />
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea rows="5" placeholder="Tell me about your project..."></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Send Message</button>
+        <p class="form-note" id="formNote"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Abdullah Khan | All Rights Reserved</p>
+    <p>Independently Crafted by Abdullah Khan</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('mobileMenu').classList.toggle('open');
+    }
+    function handleSubmit(e) {
+      e.preventDefault();
+      document.getElementById('formNote').textContent = '✅ Thanks! I\'ll get back to you soon.';
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services | Abdullah Khan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="nav">
+    <a href="index.html" class="logo">Abdullah Khan</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="about.html">About</a>
+      <a href="about.html#contact">Contact</a>
+    </nav>
+    <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+  </header>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="about.html#contact">Contact</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <h1>What I Offer</h1>
+    <p>A full suite of digital services to help your business grow online.</p>
+  </section>
+
+  <!-- SERVICES GRID -->
+  <section class="services-section">
+
+    <div class="service-card">
+      <div class="sc-icon">🔍</div>
+      <h2>SEO Services</h2>
+      <ul>
+        <li>On-Page SEO Optimization</li>
+        <li>Keyword Research</li>
+        <li>Technical SEO Basics</li>
+        <li>Website SEO Audit</li>
+        <li>Search Engine Ranking Improvement</li>
+      </ul>
+    </div>
+
+    <div class="service-card">
+      <div class="sc-icon">🌐</div>
+      <h2>WordPress Services</h2>
+      <ul>
+        <li>WordPress Website Development</li>
+        <li>Website Setup &amp; Customization</li>
+        <li>Theme Installation &amp; Design</li>
+        <li>Speed Optimization</li>
+        <li>Website Maintenance</li>
+      </ul>
+    </div>
+
+    <div class="service-card">
+      <div class="sc-icon">✍️</div>
+      <h2>Content Writing</h2>
+      <ul>
+        <li>SEO Blog Writing</li>
+        <li>Article Writing</li>
+        <li>Website Content (Home, About, Services)</li>
+        <li>Product Descriptions</li>
+        <li>Content Optimization</li>
+      </ul>
+    </div>
+
+    <div class="service-card">
+      <div class="sc-icon">📊</div>
+      <h2>Data Entry</h2>
+      <ul>
+        <li>Data Entry &amp; Data Management</li>
+        <li>Excel / Google Sheets Work</li>
+        <li>Web Research</li>
+        <li>Copy-Paste Tasks</li>
+      </ul>
+    </div>
+
+    <div class="service-card">
+      <div class="sc-icon">💡</div>
+      <h2>Digital Support</h2>
+      <ul>
+        <li>Basic Digital Marketing Support</li>
+        <li>Content Uploading (WordPress)</li>
+        <li>Website Formatting &amp; Publishing</li>
+      </ul>
+    </div>
+
+    <div class="service-card">
+      <div class="sc-icon">📣</div>
+      <h2>Content &amp; Marketing</h2>
+      <ul>
+        <li>Copywriting (Sales Pages)</li>
+        <li>Blog Management</li>
+        <li>Content Planning</li>
+        <li>Social Media Captions</li>
+        <li>Proofreading &amp; Editing</li>
+      </ul>
+    </div>
+
+    <div class="service-card">
+      <div class="sc-icon">🤝</div>
+      <h2>Virtual Assistance</h2>
+      <ul>
+        <li>Website Management</li>
+        <li>Content Upload &amp; Formatting</li>
+        <li>Email Handling (Basic)</li>
+        <li>Admin Support</li>
+      </ul>
+    </div>
+
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <h2>Ready to work together?</h2>
+    <p>Let's build something impactful. Reach out and let's discuss your project.</p>
+    <a href="about.html#contact" class="btn-primary">Get In Touch</a>
+  </section>
+
+  <footer>
+    <p>© 2026 Abdullah Khan | All Rights Reserved</p>
+    <p>Independently Crafted by Abdullah Khan</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('mobileMenu').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>
